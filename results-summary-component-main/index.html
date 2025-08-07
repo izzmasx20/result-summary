@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[var(--Paleblue)] flex justify-center items-center md:h-screen"
+  >
+    <section
+      class="bg-white flex flex-col md:flex-row w-full md:max-w-[600px] md:h-[65vh] rounded-3xl"
+    >
+      <div
+        class="md:w-1/2 bg-[var(--Lightroyalblue)] h-full rounded-b-3xl md:rounded-3xl bg-linear-to-b from-[var(--Lightslateblue)] to-[var(--Lightroyalblue)] text-white p-8"
+      >
+        <div>
+          <h3 class="text-center text-[20px]">Your Result</h3>
+        </div>
+
+        <div
+          class="text-center flex justify-center items-center h-[120px] w-[120px] bg-linear-to-t from-[var(--Lightslateblue)] to-[var(--Lightroyalblue)] rounded-full mx-auto mt-6"
+        >
+          <div>
+            <h1 class="text-6xl text-bold">76</h1>
+            <p>to 100</p>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-center font-semibold text-[20px] mt-6">Great</h1>
+          <p class="text-center mt-3 w-[80%] mx-auto">
+            you score higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+
+      <div class="md:w-1/2 h-full p-8 ">
+        <h1 class="mb-6 font-semibold">Summary</h1>
+        <div class="flex justify-between items-center bg-red-50 mb-4 p-2 rounded-2xl ">
+          <div class="flex justify-between">
+            <img src="assets/images/icon-reaction.svg" alt="reaction" />
+            <p class="ml-2"><span class="text-red-400">Reaction</span></p>
+          </div>
+          <p>80/100</p>
+        </div>
+        <div class="flex justify-between items-center bg-yellow-50 p-2 rounded-2xl mb-4">
+          <div class="flex justify-between">
+            <img src="assets/images/icon-memory.svg" alt="memory" />
+            <p class="ml-2"><span class="text-yellow-400">Memory</span></p>
+          </div>
+          <p>92/100</p>
+        </div>
+        <div class="flex justify-between items-center bg-green-50 mb-4 p-2 rounded-2xl">
+          
+          <div class="flex justify-between ">
+            <img src="assets/images/icon-visual.svg" alt="assets" />
+            <p class="ml-2"><span class="text-blue-400">visual</span></p>
+          </div>
+         <p>61/100</p>
+        </div>
+        <div class="flex justify-between items-center bg-blue-50 mb-4 p-2 rounded-2xl">
+         
+          <div class="flex justify-between">
+           <img src="assets/images/icon-verbal.svg" alt="verbal" />
+          <p class="ml-2"><span class="text-green-400">verbal</span></p>
+            
+          </div>
+          <p>73/100</p>
+        </div>
+        <!-- <div class="mb-6 bg-stone-900 text-white rounded-2xl "> -->
+   
+            <button type="submit " class="mx-auto  p-2 hover:bg-linear-to-t from-[var(--Lightslateblue)] to-[var(--Lightroyalblue)] mb-6 bg-stone-900 text-white rounded-2xl w-full cursor-pointer ">Continue</button>
+        
+        <!-- </div> -->
+
+      </div> 
+        
+      
+    </section>
+  </body>
+</html>
